@@ -1,0 +1,25 @@
+.grid{
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s linear 1s;
+}
+
+
+.grid.item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+}
+
+.grid.p_image {
+    position: relative;
+}
+
+.grid.item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
