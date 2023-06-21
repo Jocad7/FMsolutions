@@ -1,55 +1,32 @@
 import { project_list } from "../../data/projects"
 import './Project_Container.css'
 import React, { useEffect } from "react"
-import Muuri from "muuri"
 
 
-const Project_Container= () => {
+const Project_Container = () =>{
+    const data = project_list;
     useEffect(() => {
-      // Crear el grid de Muuri
-    const grid = new Muuri(".grid", {
-        layout: {
-        rounding: false,
-        },
-});
+        // Seleccionar el elemento con la clase p_container
+        const container = document.querySelector(".p_container");
+        // Agregarle la clase imgs-charge
+        setTimeout(()=> container.classList.add("imgs-charge"), 1500);
+      }, []); // Array vacío para que solo se ejecute una vez
 
- // Actualizar los items y el layout del grid cuando la ventana se cargue
-window.addEventListener("load", () => {
-    grid.refreshItems().layout();
-    document.getElementById("grid").classList.add("imgs-charge");
-});
-}, []); // Array vacío para que solo se ejecute una vez
-const data = project_list;
-return (
-<section id="grid" className="grid">
-    {data.map((item,i)=>(
+    return (
+        <section className="p_container">
+            {data.map((item,i)=>(
                 <div className="item">
-                    <div className="p_image">
-                        <img data-src={item.imgsrc} alt={item.name+i} key={i}/>
+                    <div className="item-content">
+                        <img src={item.imgsrc} alt={item.name+i} key={i}/>
                     </div>
                 </div>))
             }
-</section>
-);
+        </section>
+    )
 }
-
 
 export { Project_Container }
 
 
 
-// const ProjectContainer = () =>{
-//     const data = project_list;
-//     return (
-//         <section className="p_container">
-//             {data.map((item,i)=>(
-//                 <div className="item">
-//                     <div className="p_image">
-//                         <img src={item.imgsrc} alt={item.name+i} key={i}/>
-//                     </div>
-//                 </div>))
-//             }
-//         </section>
-//     )
-// }
 

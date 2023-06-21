@@ -1,12 +1,15 @@
-.grid{
+.p_container{
+    display: grid;
     position: relative;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s linear 1s;
 }
 
-
-.grid.item {
+.p_container.imgs-charge {
+    opacity: 1;
+}
+.p_container.item {
     position: absolute;
     display: block;
     padding: 0;
@@ -14,11 +17,11 @@
     width: calc(33.333333% - 20px);
 }
 
-.grid.p_image {
+.p_container.item-content {
     position: relative;
 }
 
-.grid.item img {
+.p_container.item img {
     width: 100%;
     cursor: pointer;
     vertical-align: top;
