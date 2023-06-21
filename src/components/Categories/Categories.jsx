@@ -3,9 +3,9 @@ const Categories = ({categ})=> {
     const ct = [...categ]
     return(
         <ul className="Category_List">
-            {categ.map(cat=>{
+            {categ.map((cat,i)=>{
                 return (
-                <li>
+                <li key={i}>
                     <a href="#">
                         {cat}
                     </a>
