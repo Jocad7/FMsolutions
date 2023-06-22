@@ -166,6 +166,11 @@ transition: .7s;
     color: white;
     cursor: pointer;
 }
+.paginationNumberBtn:not(.active){
+    opacity: 0.7;
+    background-image: linear-gradient(to right, gray, transparent);
+    border: none;
+}
 .active {
     transform: scale(1.7);
     background-color: #1479EA;
