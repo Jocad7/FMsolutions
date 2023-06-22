@@ -50,12 +50,6 @@ h2 {
   text-align: center;
   border-radius: 20px;
 }
-.Category_List{
-  list-style-type: none;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
+
 
 

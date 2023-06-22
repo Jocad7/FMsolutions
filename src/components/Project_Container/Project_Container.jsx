@@ -29,8 +29,15 @@ const Project_Container = () =>{
 
         const getPageNumbers = ()=>{
             const totalPages = Math.ceil(data.length / itemsPerPage);
-            const pageNumbers = Array.from({length: totalPages},(_,i)=> i +1);
-            return pageNumbers;            
+            // const pageNumbers = Array.from({length: totalPages},(_,i)=> i +1);
+            const pageNumbers = [];
+            const range = 2;
+            const min = Math.max(1,page - range);
+            const max = Math.min(totalPages, page + range);
+            for(let x = min; x <= max; x++){
+                pageNumbers.push(x)
+            };
+            return pageNumbers           
         }
 
         return (
@@ -45,8 +52,19 @@ const Project_Container = () =>{
                 }
             </section>
             <div className="pagination"> {/* Agregar unos botones para cambiar la página */}
+                <div className="grid-item1">
+                {getPageNumbers()
+                    .map(number=>(
+                        <button
+                        key={number}
+                        onClick={()=>changePage(number)}
+                        className={number == page ? "paginationNumberBtn active": "paginationNumberBtn"}>
+                            {number}
+                        </button>
+                    ))}
+                </div>
                 <button 
-                className="paginationStepBtn"
+                className="paginationStepBtn grid-item2"
                 onClick={() => changePage(page - 1)}
                 disabled = {page == 1}
                 >
@@ -63,16 +81,11 @@ const Project_Container = () =>{
                         <span>v</span>  
                     </span>
                 </button>
-                {getPageNumbers().map(number=>(
-                    <button
-                    key={number}
-                    onClick={()=>changePage(number)}
-                    className={number == page ? "paginationNumberBtn active": "paginationNumberBtn"}>
-                        {number}
-                    </button>
-                ))}
+                
+                
+                
                 <button 
-                className="paginationStepBtn"
+                className="paginationStepBtn grid-item3"
                 onClick={() => changePage(page + 1)}
                 disabled={page == getPageNumbers()[getPageNumbers().length-1]}
                 >

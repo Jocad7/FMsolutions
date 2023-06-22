@@ -1,7 +1,7 @@
 
 .p_container{
     width: 80%; 
-    margin: 50px auto;
+    margin: 50px auto 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
@@ -22,6 +22,7 @@
     cursor: pointer;
     width: 80%;
     height: 90%;
+    min-width: 150px;
     object-fit:cover;
     border-radius: 20px;
     overflow: hidden;
@@ -30,19 +31,33 @@
     box-shadow: -13px 13px 13px -7px rgba(48,51,48,1);
 }
 .pagination{
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "item1 item1"
+    "item2 item3";
     place-items: center;
     justify-content: center;
     gap: 10px;
+}
+.grid-item1{
+    grid-area: item1;
+}
+.grid-item2{
+    grid-area: item2;
+}
+.grid-item3{
+    grid-area: item3;
 }
 .pagination :active:not([disabled]){ 
     transform: scale(0.97);
 }
 .pagination :disabled{
-    background-color: gray;
-    opacity: .6;
+    background-color: transparent;
+    background-image: linear-gradient(to left, gray, transparent, transparent);
+    opacity: .5;
     cursor:default;
 }
+
 /*------------> Next, Prev button*/
 
 .paginationStepBtn {
@@ -52,7 +67,7 @@
     width: 95.02px;
     height: 42.66px;
     border: none;
-    background-color: #3653F8;
+    background-color: #1479EA;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,12 +157,14 @@ transition: .7s;
     height: 20px;
     text-align: center;
     border-radius: 50%;
-    border: none;
-    
+    border: solid 1px #1479EA;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
 }
 .active {
     transform: scale(1.7);
-    background-color: #3653F8;
+    background-color: #1479EA;
     font-weight: bold;
     color: white;
     transition: all .3s linear;
