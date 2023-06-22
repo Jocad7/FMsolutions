@@ -1,6 +1,6 @@
 import { project_list } from "../../data/projects"
 import './Project_Container.css'
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 
 
 const Project_Container = (

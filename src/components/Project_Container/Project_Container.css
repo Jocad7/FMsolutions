@@ -30,6 +30,7 @@
     -webkit-box-shadow: -13px 13px 13px -7px rgba(48,51,48,1);
     -moz-box-shadow: -13px 13px 13px -7px rgba(48,51,48,1);
     box-shadow: -13px 13px 13px -7px rgba(48,51,48,1);
+    transition:  all linear 2s;
 }
 .pagination{
     display: grid;
