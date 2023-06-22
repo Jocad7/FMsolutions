@@ -1,13 +1,16 @@
 import './Categories.css'
+import { category_list } from '../../data/projects';
 import { useState } from "react"
 
 
-const Categories = ({categ})=> {
-    const [selected, setSelected] = useState(null)
-    const ct = [...categ]
+const Categories = ({categ, setFiltCategory, setPage})=> {
+    const [selected, setSelected] = useState(0)
 
-    const handleClick = (index) => setSelected(index);
-
+    const handleClick = (index) => {
+            setSelected(index);
+            setFiltCategory(category_list[index]);
+            setPage(1);
+        };
     return(
         <ul className="Category_List">
             {categ.map((cat,i)=>{

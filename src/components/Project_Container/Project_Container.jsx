@@ -3,9 +3,13 @@ import './Project_Container.css'
 import React, { useEffect, useState } from "react"
 
 
-const Project_Container = () =>{
-    const data = project_list;
-    const [page, setPage] = useState(1);
+const Project_Container = (
+    {   filtCategory,
+        page,
+        setPage
+    }) =>{
+    const data = filtCategory == "All" ? project_list : project_list.filter(e=> e.category == filtCategory);
+    
     const itemsPerPage = 6;
 
     useEffect(() => {
