@@ -48,14 +48,18 @@
 .grid-item3{
     grid-area: item3;
 }
-.pagination :active:not([disabled]){ 
-    transform: scale(0.97);
-}
-.pagination :disabled{
+.grid-item2:disabled, .grid-item3:disabled{
     background-color: transparent;
     background-image: linear-gradient(to left, gray, transparent, transparent);
     opacity: .5;
     cursor:default;
+}
+.grid-item3:disabled{
+    background-image: linear-gradient(to right, gray, transparent, transparent);
+}
+
+.pagination :active:not([disabled]){ 
+    transform: scale(0.97);
 }
 
 /*------------> Next, Prev button*/
