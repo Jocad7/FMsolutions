@@ -1,77 +1,100 @@
 let project_list=[
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/orderSummary.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
     {
         "name": "example...",
-        "imgsrc": "./src/assets/order-summary-1.jpg"
+        "imgsrc": "./images/nftCard.jpg"
     },
-   
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
+    {
+        "name": "example...",
+        "imgsrc": "./images/nftCard.jpg"
+    },
 ]
 
 export { project_list } 
