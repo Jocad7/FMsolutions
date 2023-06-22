@@ -51,8 +51,8 @@ const Project_Container = () =>{
                     </div>))
                 }
             </section>
-            <div className="pagination"> {/* Agregar unos botones para cambiar la página */}
-                <div className="grid-item1">
+            <div className={data.length <= itemsPerPage ? "inactive":"pagination"}> {/* Agregar unos botones para cambiar la página */}
+                <div className={"grid-item1"}>
                 {getPageNumbers()
                     .map(number=>(
                         <button
