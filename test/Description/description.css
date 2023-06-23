@@ -1,0 +1,33 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.description_card{
+    display: grid;
+    padding: 5px;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4";
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient(to top, rgb(199, 67, 67),rgb(199, 67, 67), transparent);
+    transition:transform .5s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    color: rgb(2, 2, 2);
+}
+.item:hover .description_card{
+    transform: translateY(-70px);
+}
+.lvl{
+    grid-area: item1;
+}
+.repo{
+    grid-area: item3;
+}
+.deploy{
+    grid-area:item4;
+}
+

@@ -1,4 +1,5 @@
 import { project_list } from "../../data/projects"
+import { ItemCard } from "../ItemCard/ItemCard"
 import './Project_Container.css'
 import React, { useEffect } from "react"
 
@@ -48,11 +49,24 @@ const Project_Container = (
         <>
             <section className="p_container">
                 {getPaginatedData().map((item,i)=>(
-                    <div className="item" key={item.name[0]+i}>
-                        <div className="item-content">
-                            <img src={item.imgsrc} alt={item.name+i} key={item.name[1]+i}/>
-                        </div>
-                    </div>))
+                    <ItemCard
+                    urlImg={item.imgsrc}
+                    repoUrl={item.repo}
+                    deployUrl={item.deploy}
+                    fmUrl={item.fmsrc}
+                    category={item.category}
+                    alt={item.name}
+                    description={item.name}
+                    key={i}
+                    />
+                    // <div className="item" key={item.name[0]+i}>
+                        
+                    //     <div className="item-content">
+                    //         <img src={item.imgsrc} alt={item.name+i} key={item.name[1]+i}/>
+                    //         <Description/>
+                    //     </div>
+                    // </div>
+                    ))
                 }
             </section>
             <div className={data.length <= itemsPerPage ? "inactive":"pagination"}> {/* Agregar unos botones para cambiar la página */}

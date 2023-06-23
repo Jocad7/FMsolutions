@@ -2,129 +2,84 @@
 let category_list = ["All","Newbie", "Junior", "Intermediate", "Advance"]
 let project_list=[
     {
-        "name": "example...",
+        "name": "Interactive Rating",
         "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    
-    {
-        "name": "example...",
-        "category": "All",
-        "imgsrc": "./images/orderSummary.jpg"
+        "imgsrc": "./images/interactiveRating.png",
+        "fmsrc":"https://www.frontendmentor.io/solutions/javascript-IGS0aUYnJZ",
+        "repo":"https://github.com/Jocad7/interactive-rating",
+        "deploy":"https://interactive-rating-theta.vercel.app/"
     },
     {
-        "name": "example...",
+        "name": "Article Preview",
         "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
+        "imgsrc": "./images/articlePreview.png",
+        "fmsrc":"https://www.frontendmentor.io/solutions/html-css-js-voc2NAV43F",
+        "repo":"https://github.com/Jocad7/Article-preview-component-FM-",
+        "deploy":"https://article-preview-component-theta-eight.vercel.app"
     },
     {
-        "name": "example...",
+        "name": "QR code component",
         "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
+        "imgsrc": "./images/QR component.png",
+        "fmsrc":"https://www.frontendmentor.io/solutions/html-css-js-voc2NAV43F",
+        "repo":"https://github.com/Jocad7/QRcodecomponent",
+        "deploy":"#"
     },
     {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    
-    {
-        "name": "example...",
-        "category": "All",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    
-    {
-        "name": "example...",
-        "category": "Newbie",
-        "imgsrc": "./images/orderSummary.jpg"
-    },
-    
-    {
-        "name": "example...",
-        "category": "Junior",
-        "imgsrc": "./images/nftCard.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Junior",
-        "imgsrc": "./images/nftCard.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Junior",
-        "imgsrc": "./images/nftCard.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Junior",
-        "imgsrc": "./images/nftCard.jpg"
-    },
-    {
-        "name": "example...",
-        "category": "Junior",
-        "imgsrc": "./images/nftCard.jpg"
-    },
-    
-    {
-        "name": "example...",
-        "category": "Intermediate",
-        "imgsrc": "./images/screenshot.jpg"
-    },
-    {
-        "name": "example...",
+        "name": "formulario de email",
         "category": "Advance",
-        "imgsrc": "./images/OIP.jpg"
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
     },
     {
-        "name": "example...",
+        "name": "formulario de email",
         "category": "Advance",
-        "imgsrc": "./images/OIP.jpg"
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
     },
     {
-        "name": "example...",
+        "name": "formulario de email",
         "category": "Advance",
-        "imgsrc": "./images/OIP.jpg"
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
+    },
+    {
+        "name": "formulario de email",
+        "category": "Advance",
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
+    },
+    {
+        "name": "formulario de email",
+        "category": "Advance",
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
+    },
+    {
+        "name": "formulario de email",
+        "category": "Advance",
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
+    },
+    {
+        "name": "formulario de email",
+        "category": "Advance",
+        "imgsrc": "./images/OIP.jpg",
+        "fmsrc":"#",
+        "repo":"#",
+        "deploy":"#"
     },
 
 ]
